@@ -16,8 +16,8 @@ df = df.loc[df['ManufacturerSerial'] == 816839]
 
 #print(len(df.ManufacturerSerial.unique().tolist()) ) #unique values
 
-latitude_list = list(df['Latitude'])[:1000]
-longitude_list = list(df['Longitude'])[:1000]
+latitude_list = list(df['Latitude'])[:10]
+longitude_list = list(df['Longitude'])[:10]
 print(df)
 
 gmap3 = gmplot.GoogleMapPlotter(list(df['Latitude'])[0],list(df['Longitude'])[0],11)
